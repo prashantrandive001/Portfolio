@@ -1,66 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Home</title>
 
     <style>
-        
-        img
-        {
-            margin-top: 60px;
+        img {
+            margin-top: 70px;
             border-radius: 50%;
-            box-shadow: 20px 20px 10px black;
+            box-shadow: 10px 10px 20px rgb(202, 16, 254);
             float: right;
-            margin-right: 20px;
+            margin-right: 30px;
         }
 
-        .name1
-        {
+        .name1 {
             text-align: center;
-            padding-top:190px;
+            padding-top: 190px;
             padding-left: 30px;
             font-size: 25px;
         }
-       strong
-       {
-         color: rgb(35, 243, 246);
-       }
 
-       .about
-       {
-            margin-left:360px;
+        strong {
+            color: rgb(232, 20, 221);
+
+        }
+
+        .about {
+            margin-left: 360px;
             display: inline-block;
             border-radius: 40px;
             padding: 12px 18px;
             background: rgb(4, 215, 211);
             color: black;
             box-shadow: 5px 9px 10px blueviolet;
-       }
+        }
 
-       .about:hover
-       {
-        color:rgb(237, 39, 221);
-       }
+        .about:hover {
+            color: rgb(237, 39, 221);
+        }
 
+        html{
+
+
+            height: 100%;
+            background-image: linear-gradient(#c4dafe, #ff7eda);
+        }
+
+        .responsive {}
+
+        @media screen and (max-width:767px) {
+            .responsive {
+                width:100%;
+            }
+        }
+
+        @media screen and (min-width:767px) and (max-width:1023px) {
+            .responsive {
+                width:100%;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <div class="img">
+    <div class="responsive">
+        <div class="img">
 
-       <img src="prashant.jpeg" alt="Error" height="400px " width="400px"  >
-    </div>   
+            <img src="prashant.jpeg" alt="Error" height="400px " width="400px">
+        </div>
 
-    <div class="name1">
-        <p>Hello, it`s Me</p>
-        <h1> Randive Prashant </h1>
-        <p> And I`m a <strong> Web Developer </strong></p> 
+        <div class="name1">
+            <p>Hello, it`s Me</p>
+            <h1><u> Randive Prashant </u> </h1>
+            <p> And I`m a <strong> <u>Web Devloper</u> </strong></p>
+        </div>
+
+        <div>
+            <a href="AboutMe.html" class="about" target="_blank">More About Me</a>
+        </div>
     </div>
-
-    <div>
-        <a href="AboutMe.html" class="about" target="_blank">More About Me</a>
-    </div>
-
 </body>
+
 </html>
